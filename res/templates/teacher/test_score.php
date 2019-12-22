@@ -1,6 +1,6 @@
 <div class="title-content">
-	<span class="title">Danh Sách Điểm Bài Thi <?=$scores[0]->test_code?></span>
-	<a class="title" href="index.php?action=export_score&test_code=294005">Xuất File Excel</a>
+	<span class="title">Test marks' List <?=$scores[0]->test_code?></span>
+	<a class="title" href="index.php?action=export_score&test_code=294005">Export File Excel</a>
 </div>
 <div class="block-content overflow scrollbar">
 	<div class="content">
@@ -10,11 +10,11 @@
 		<table class="striped centered responsive-table" id="scores">
 			<thead>
 				<tr>
-					<th class="">STT</th>
-					<th class="">Tên</th>
-					<th class="">Tài Khoản</th>
-					<th class="">Lớp</th>
-					<th class="">Điểm</th>
+					<th class="">Number</th>
+					<th class="">Name</th>
+					<th class="">Account</th>
+					<th class="">Class</th>
+					<th class="">Mark</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -40,18 +40,18 @@
 <script>
 	$('#scores').DataTable( {
 		"language": {
-			"lengthMenu": "Hiển thị _MENU_",
-			"zeroRecords": "Không tìm thấy",
-			"info": "Hiển thị trang _PAGE_/_PAGES_",
-			"infoEmpty": "Không có dữ liệu",
-			"emptyTable": "Không có dữ liệu",
-			"infoFiltered": "(tìm kiếm trong tất cả _MAX_ mục)",
-			"sSearch": "Tìm kiếm",
+			"lengthMenu": "Show _MENU_",
+			"zeroRecords": "Can't find",
+			"info": "Show page _PAGE_/_PAGES_",
+			"infoEmpty": "No data",
+			"emptyTable": "No data",
+			"infoFiltered": "(Filter _MAX_ )",
+			"sSearch": "Search",
 			"paginate": {
-				"first":      "Đầu",
-				"last":       "Cuối",
-				"next":       "Sau",
-				"previous":   "Trước"
+				"first":      "First",
+				"last":       "Last",
+				"next":       "Next",
+				"previous":   "Prev"
 			},
 		}
     } );
